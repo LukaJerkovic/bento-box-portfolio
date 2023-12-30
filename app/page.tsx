@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       <section
-        id="#contact"
+        id="contact"
         className="flex flex-col sm:flex-row flex-grow p-8 m-0 mt-0 items-center justify-center"
       >
         <div className="sm:w-1/2 lg:w-full bg-white m-2 rounded-3xl p-4 lg:p-8 border-4 border-[#AD343E] flex flex-col items-center">
