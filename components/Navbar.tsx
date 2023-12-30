@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex items-center justify-between p-6 mx-8 my-6 bg-[#F5FBEF] rounded-3xl border-4 border-[#AD343E]">
+      <div className="flex items-center justify-between p-6 mx-8 my-6 bg-white rounded-3xl border-4 border-[#AD343E]">
         <div className="flex items-center">
           <Link
             href="/"
@@ -31,13 +31,13 @@ const Navbar = () => {
             .home
           </Link>
           <Link
-            href="/projects"
+            href="#projects"
             className="text-[#0C1B33] pr-8 hover:first-letter:text-red-800 lg:text-lg hover:scale-125"
           >
             .projects
           </Link>
           <Link
-            href="/contact"
+            href="#contact"
             className="text-[#0C1B33] pr-8 hover:first-letter:text-red-800 lg:text-lg  hover:scale-125"
           >
             .contact
@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden absolute w-[85%] p-6 bg-[#F5FBEF] m-8 mt-0 rounded-3xl border-4 border-[#AD343E]">
+        <div className="md:hidden absolute w-[85%] p-6 bg-white m-8 mt-0 rounded-3xl border-4 border-[#AD343E]">
           <div className="flex flex-col space-y-4">
             <Link
               href="/"
@@ -63,13 +63,13 @@ const Navbar = () => {
               .home
             </Link>
             <Link
-              href="/"
+              href="/#projects"
               className="text-[#0C1B33] pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
             >
               .projects
             </Link>
             <Link
-              href="/"
+              href="/#contact"
               className="text-[#0C1B33] pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
             >
               .contact
