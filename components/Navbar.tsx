@@ -58,19 +58,19 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <Link
               href="/"
-              className="text-[#0C1B33] pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
             >
               .home
             </Link>
             <Link
               href="/#projects"
-              className="text-[#0C1B33] pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
             >
               .projects
             </Link>
             <Link
               href="/#contact"
-              className="text-[#0C1B33] pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
             >
               .contact
             </Link>

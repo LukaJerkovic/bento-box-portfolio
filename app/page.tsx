@@ -14,14 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function Home() {
   const controlsLeft = useAnimation();
@@ -139,41 +132,43 @@ export default function Home() {
         <h1 className="text-white mb-4 text-2xl lg:text-5xl font-semibold">
           Some of my projects :
         </h1>
-        <Carousel
-          opts={{
-            align: 'center',
-          }}
-          className="w-full max-w-screen-2xl"
-        >
-          <CarouselContent>
-            {projects.map((project, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4">
-                  <Card className="h-64 md:h-96 rounded-3xl border-4 border-[#AD343E] overflow-hidden">
-                    <CardContent className="h-full relative">
-                      <a
-                        href={project.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block h-full w-full"
-                      >
-                        <Image
-                          src={project.Image}
-                          alt={`Project ${index + 1}`}
-                          layout="fill"
-                          objectFit="cover"
-                          className="rounded-3xl"
-                        />
-                      </a>
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
+        <div className="w-full max-w-screen-2xl relative overflow-hidden">
+          <Carousel
+            opts={{
+              align: 'center',
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {projects.map((project, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-4">
+                    <Card className="h-64 md:h-96 rounded-3xl border-4 border-[#AD343E] overflow-hidden">
+                      <CardContent className="h-full relative">
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block h-full w-full"
+                        >
+                          <Image
+                            src={project.Image}
+                            alt={`Project ${index + 1}`}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-3xl"
+                          />
+                        </a>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
       </section>
 
       <section
