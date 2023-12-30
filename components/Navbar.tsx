@@ -59,18 +59,21 @@ const Navbar = () => {
             <Link
               href="/"
               className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              onClick={toggleMenu}
             >
               .home
             </Link>
             <Link
               href="/#projects"
               className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              onClick={toggleMenu}
             >
               .projects
             </Link>
             <Link
               href="/#contact"
               className="text-[#0C1B33] text-2xl pr-6 hover:first-letter:text-red-800 hover:scale-125 hover:pl-8"
+              onClick={toggleMenu}
             >
               .contact
             </Link>
